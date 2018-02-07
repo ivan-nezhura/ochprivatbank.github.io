@@ -160,8 +160,8 @@ class PayParts
                 $CreateResult['state'],
                 $CreateResult['storeId'],
                 $CreateResult['orderId'],
-                $CreateResult['message'],
-                $CreateResult['token'],
+                isset($CreateResult['message']) ? $CreateResult['message'] : null,
+                isset($CreateResult['token']) ? $CreateResult['token'] : null,
                 $this->password
             ];
 
